@@ -1,0 +1,15 @@
+/Users/dylan/Documents/IdeaProjects/user-center-backend/src/main/java/com/yupi/usercenter/exception/BusinessException.java
+/Users/dylan/Documents/IdeaProjects/user-center-backend/src/main/java/com/yupi/usercenter/exception/GlobalExceptionHandler.java
+/Users/dylan/Documents/IdeaProjects/user-center-backend/src/main/java/com/yupi/usercenter/common/BaseResponse.java
+/Users/dylan/Documents/IdeaProjects/user-center-backend/src/main/java/com/yupi/usercenter/service/UserService.java
+/Users/dylan/Documents/IdeaProjects/user-center-backend/src/main/java/com/yupi/usercenter/Main.java
+/Users/dylan/Documents/IdeaProjects/user-center-backend/src/main/java/com/yupi/usercenter/UserCenterApplication.java
+/Users/dylan/Documents/IdeaProjects/user-center-backend/src/main/java/com/yupi/usercenter/contant/UserConstant.java
+/Users/dylan/Documents/IdeaProjects/user-center-backend/src/main/java/com/yupi/usercenter/controller/UserController.java
+/Users/dylan/Documents/IdeaProjects/user-center-backend/src/main/java/com/yupi/usercenter/model/domain/User.java
+/Users/dylan/Documents/IdeaProjects/user-center-backend/src/main/java/com/yupi/usercenter/model/domain/request/UserRegisterRequest.java
+/Users/dylan/Documents/IdeaProjects/user-center-backend/src/main/java/com/yupi/usercenter/common/ErrorCode.java
+/Users/dylan/Documents/IdeaProjects/user-center-backend/src/main/java/com/yupi/usercenter/service/impl/UserServiceImpl.java
+/Users/dylan/Documents/IdeaProjects/user-center-backend/src/main/java/com/yupi/usercenter/mapper/UserMapper.java
+/Users/dylan/Documents/IdeaProjects/user-center-backend/src/main/java/com/yupi/usercenter/common/ResultUtils.java
+/Users/dylan/Documents/IdeaProjects/user-center-backend/src/main/java/com/yupi/usercenter/model/domain/request/UserLoginRequest.java

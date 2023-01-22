@@ -1,0 +1,83 @@
+-------------------------------------------------------------------------------
+Test set: com.yupi.usercenter.service.UserServiceTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 3, Skipped: 0, Time elapsed: 14.822 s <<< FAILURE! - in com.yupi.usercenter.service.UserServiceTest
+testAddUser  Time elapsed: 4.468 s  <<< ERROR!
+org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/yupi/usercenter/mapper/UserMapper.java (best guess)
+### The error may involve com.yupi.usercenter.mapper.UserMapper.insert
+### The error occurred while executing an update
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yupi.usercenter.service.UserServiceTest.testAddUser(UserServiceTest.java:31)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### The error may exist in com/yupi/usercenter/mapper/UserMapper.java (best guess)
+### The error may involve com.yupi.usercenter.mapper.UserMapper.insert
+### The error occurred while executing an update
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yupi.usercenter.service.UserServiceTest.testAddUser(UserServiceTest.java:31)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: 
+Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yupi.usercenter.service.UserServiceTest.testAddUser(UserServiceTest.java:31)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yupi.usercenter.service.UserServiceTest.testAddUser(UserServiceTest.java:31)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: 
+Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.yupi.usercenter.service.UserServiceTest.testAddUser(UserServiceTest.java:31)
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.yupi.usercenter.service.UserServiceTest.testAddUser(UserServiceTest.java:31)
+
+userRegister  Time elapsed: 0 s  <<< ERROR!
+com.yupi.usercenter.exception.BusinessException: 请求参数错误
+	at com.yupi.usercenter.service.UserServiceTest.userRegister(UserServiceTest.java:69)
+
+testUpdateUser  Time elapsed: 4.441 s  <<< ERROR!
+org.mybatis.spring.MyBatisSystemException: 
+nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+### The error may exist in com/yupi/usercenter/mapper/UserMapper.java (best guess)
+### The error may involve com.yupi.usercenter.mapper.UserMapper.updateById
+### The error occurred while executing an update
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.yupi.usercenter.service.UserServiceTest.testUpdateUser(UserServiceTest.java:47)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+
+### Error updating database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+### The error may exist in com/yupi/usercenter/mapper/UserMapper.java (best guess)
+### The error may involve com.yupi.usercenter.mapper.UserMapper.updateById
+### The error occurred while executing an update
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.yupi.usercenter.service.UserServiceTest.testUpdateUser(UserServiceTest.java:47)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.yupi.usercenter.service.UserServiceTest.testUpdateUser(UserServiceTest.java:47)
+Caused by: java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.yupi.usercenter.service.UserServiceTest.testUpdateUser(UserServiceTest.java:47)
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at com.yupi.usercenter.service.UserServiceTest.testUpdateUser(UserServiceTest.java:47)
+
+testGetUser  Time elapsed: 4.707 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at com.yupi.usercenter.service.UserServiceTest.testGetUser(UserServiceTest.java:60)
+
+testDeleteUser  Time elapsed: 1.195 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.yupi.usercenter.service.UserServiceTest.testDeleteUser(UserServiceTest.java:54)
+
